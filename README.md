@@ -38,12 +38,15 @@ We want to build a chess website directed towards newer players of the game. Thi
  
 ## Team Members
 Alexander Bobb, Joseph Wang, Michelle Han, Michael Zhong, Pepi Martinez, William Huang
+
 [Alexander_Bobb_Github](https://github.com/AlexanderBobb)
+
 [Joseph_Wang_Github](https://github.com/jw5374)
+
 [Michelle_Han_Github](https://github.com/mich-han)
+
 [Michael_Zhong_Github](https://github.com/mzhong360)
-[Pepi_Martinez_Github]()
-[William_Huang_Github]()
+
 ## History
 All of our members have a background playing chess and we noticed issues with some of the bigger more main-stream websites. 
 [Contributing.md](https://github.com/agile-dev-assignments/project-setup-team-washington-matrix/blob/master/CONTRIBUTING.md)
