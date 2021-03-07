@@ -21,17 +21,17 @@ We want to build a chess website directed towards newer players of the game. Thi
 	* Basic Movements
 		* A pre-set board to allow users to move each chess piece to certain squares 
 		* Ability to change between each board pre-set in place
-* Basic Patterns
-	* Demonstrate patterns and have users perform these tactics
-		* Including forks, skewers, and pins (discovered attacks)
-* Basic Checkmates
-	* A pre-set board set up to allow users to learn the basic checkmates.
-		* Including smothered, back rank, and scholars
-* Mechanics
-	* A pre-set board to allow users to move chess pieces in unique ways under certain conditions
-		*Including en passant and castling
-* Puzzles
-	* A pre-set board to allow users to solve puzzles to find the best possible move(s) on a certain set up ranging from easy, medium, and hard
+	* Basic Patterns
+		* Demonstrate patterns and have users perform these tactics
+			* Including forks, skewers, and pins (discovered attacks)
+	* Basic Checkmates
+		* A pre-set board set up to allow users to learn the basic checkmates.
+			* Including smothered, back rank, and scholars
+	* Mechanics
+		* A pre-set board to allow users to move chess pieces in unique ways under certain conditions
+			*Including en passant and castling
+	* Puzzles
+		* A pre-set board to allow users to solve puzzles to find the best possible move(s) on a certain set up ranging from easy, medium, and hard
 * Info Page
 	* Links to additional sources about general information about chess
 * Board and piece theme customization
