@@ -1,17 +1,15 @@
 import React from 'react';
 
-class Practice extends React.Component {
+class Home extends React.Component {
     constructor(props) {
         super(props);
     }
     
     render() {
         return (
-            <div>
-                Practice
-            </div>
+            <div>Home Page</div>
         )
     }
 }
 
-export default Practice;
+export default Home;

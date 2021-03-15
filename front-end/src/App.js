@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Practice from './page/Practice';
 import Learn from './page/Learn';
+import Home from './page/Home';
 
 function App() {
   return (
