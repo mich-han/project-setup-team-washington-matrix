@@ -8,7 +8,7 @@ class Practice extends React.Component {
     render() {
         return (
             <div>
-                Practice
+                Practice Page
             </div>
         )
     }

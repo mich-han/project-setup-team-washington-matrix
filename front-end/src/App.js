@@ -6,9 +6,14 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Practice from './page/Practice';
-import Learn from './page/Learn';
 import Home from './page/Home';
+import Info from './page/Info';
+import Learn from './page/Learn';
+import Practice from './page/Practice';
+import Login from './page/Login';
+import Play from './page/Play';
+import Profile from './page/Profile';
+import Signup from './page/Signup';
 
 function App() {
   return (
@@ -22,6 +27,21 @@ function App() {
             </Route>
             <Route path="/learn">
               <Learn />
+            </Route>
+            <Route path="/info">
+              <Info />
+            </Route>
+            <Route path="/login">
+              <Login />
+            </Route>
+            <Route path="/play">
+              <Play />
+            </Route>
+            <Route path="/profile">
+              <Profile />
+            </Route>
+            <Route path="/signup">
+              <Signup />
             </Route>
             <Route path="/">
               <Home />
