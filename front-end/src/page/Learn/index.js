@@ -1,7 +1,7 @@
 import React from 'react';
 
 class Learn extends React.Component {
-    constuctor(props) {
+    constructor(props) {
         super(props);
     }
     
