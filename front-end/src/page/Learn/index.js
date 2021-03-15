@@ -8,7 +8,7 @@ class Learn extends React.Component {
     render() {
         return (
             <div>
-                Learn Page
+                Learn Pages
             </div>
         )
     }
