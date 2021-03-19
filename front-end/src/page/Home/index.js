@@ -9,7 +9,6 @@ import {
     Segment,
     Grid,
     Button,
-    Modal
  } from 'semantic-ui-react';
 import PlayModal from '../../components/PlayModal';
 const imgsrc = '/img/chesslogo.png';
@@ -18,25 +17,11 @@ class Home extends React.Component {
         super(props);
         this.state = {
             visible: false,
-            open: false,
-            active: false
         }
     }
     toggleVisible() {
         this.setState({
             visible: !this.state.visible
-        })
-    }
-
-    toggleOpen(newstate) {
-        this.setState({
-            open: newstate
-        })
-    }
-
-    toggleActive() {
-        this.setState({
-            active: !this.state.active
         })
     }
 
@@ -106,10 +91,9 @@ class Home extends React.Component {
                                         <Grid.Column> </Grid.Column>
                                     </Grid.Row>
                                 </Grid>
-                            </Sidebar.Pusher>
-                            
+                            </Sidebar.Pusher>    
                         </Sidebar.Pushable>
-                        </div>
+                    </div>
                 </div>
             </div>
         );
