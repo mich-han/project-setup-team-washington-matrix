@@ -1,0 +1,36 @@
+{/* <Grid.Row style={{height: '90vh'}}> */}
+        {/* <Grid.Column width={4}>
+            <Menu fluid vertical tabular pointing inverted>
+                <Menu.Item
+                name='history'
+                active={activeItem === 'history'}
+                onClick={this.handleItemClick}
+                color='teal'
+                />
+                <Menu.Item
+                name='pics'
+                active={activeItem === 'pics'}
+                onClick={this.handleItemClick}
+                color='teal'
+                />
+                <Menu.Item
+                name='companies'
+                active={activeItem === 'companies'}
+                onClick={this.handleItemClick}
+                color='teal'
+                />
+                <Menu.Item
+                name='links'
+                active={activeItem === 'links'}
+                onClick={this.handleItemClick}
+                color='teal'
+                />
+            </Menu>
+        </Grid.Column>
+        <Grid.Column stretched width={12}>
+            <Tab.Pane active={activeItem === 'history'} style={{backgroundColor: '#00141b'}}> Some Info Text </Tab.Pane>
+            <Tab.Pane active={activeItem === 'pics'} style={{backgroundColor: '#00141b'}}> Some Info Text Some Info Text </Tab.Pane>
+            <Tab.Pane active={activeItem === 'companies'} style={{backgroundColor: '#00141b'}}> Some Info Text Some Info Text Some Info Text </Tab.Pane>
+            <Tab.Pane active={activeItem === 'links'} style={{backgroundColor: '#00141b'}}> Some Info Text Some Info Text Some Info Text Some Info Text </Tab.Pane>
+        </Grid.Column> */}   
+    {/* </Grid.Row> */}
