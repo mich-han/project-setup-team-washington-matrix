@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Grid, Menu, Icon, Sidebar, Image, Tab } from 'semantic-ui-react';
+import { Grid, Menu, Icon, Sidebar, Image, Tab, Transition } from 'semantic-ui-react';
 import './Info.css';
 const imgsrc = '/img/chesslogo.png';
 class Info extends React.Component {
@@ -8,20 +8,12 @@ class Info extends React.Component {
         super(props);
         this.state = {
             visible: false,
-            activeItem: 'history',
-            activePane: false
+            activeItem: 'history'
         }
     }
     toggleVisible() {
         this.setState({
             visible: !this.state.visible
-        })
-    }
-
-
-    togglePane() {
-        this.setState({
-            activePane: !this.state.activePane
         })
     }
 
@@ -38,7 +30,13 @@ class Info extends React.Component {
                 onClick={this.handleItemClick}
                 color='teal'
                 />
-            , render: () => 
+            , pane:
+            <Transition
+                animation='fade left'
+                duration={125}
+                visible={activeItem === 'history'}
+                unmountOnHide={true}
+            >
             <Tab.Pane style={{backgroundColor: '#00141b', color: 'lightgrey'}}>
                 Some Info Text Some Info Text Some Info Text Some Info Text Some Info Text Some Info Text Some Info Text Some Info Text 
                 <br />Some Info Text Some Info Text Some Info Text Some Info Text Some Info Text Some Info Text Some Info Text Some Info Text Some Info Text Some Info Text  
@@ -62,7 +60,7 @@ class Info extends React.Component {
                 <br />Some Info Text
                 <br />Some Info Text
                 <br />Some Info Text
-            </Tab.Pane>},
+            </Tab.Pane></Transition>},
             {menuItem: 
                 <Menu.Item
                 style={{color: 'lightgrey'}}
@@ -71,10 +69,16 @@ class Info extends React.Component {
                 onClick={this.handleItemClick}
                 color='teal'
                 />
-            , render: () => 
+            , pane:
+            <Transition
+                animation='fade left'
+                duration={125}
+                visible={activeItem === 'notable players'}
+                unmountOnHide={true}
+            >
             <Tab.Pane style={{backgroundColor: '#00141b', color: 'lightgrey'}}>
                 Some Info Text Some Info Text 
-            </Tab.Pane>},
+            </Tab.Pane></Transition>},
             {menuItem:  
                 <Menu.Item
                 style={{color: 'lightgrey'}}
@@ -83,10 +87,16 @@ class Info extends React.Component {
                 onClick={this.handleItemClick}
                 color='teal'
                 />
-            , render: () => 
+            , pane: 
+            <Transition
+                animation='fade left'
+                duration={125}
+                visible={activeItem === 'Recent Events'}
+                unmountOnHide={true}
+            >
             <Tab.Pane style={{backgroundColor: '#00141b', color: 'lightgrey'}}>
                 Some Info Text Some Info Text Some Info Text
-            </Tab.Pane>},
+            </Tab.Pane></Transition>},
             {menuItem: 
                 <Menu.Item
                 style={{color: 'lightgrey'}}
@@ -95,12 +105,18 @@ class Info extends React.Component {
                 onClick={this.handleItemClick}
                 color='teal'
                 />
-            , render: () => 
+            , pane:
+            <Transition
+                animation='fade left'
+                duration={125}
+                visible={activeItem === 'Resources'}
+                unmountOnHide={true}
+            >
             <Tab.Pane style={{backgroundColor: '#00141b', color: 'lightgrey'}}>
                 Some Info Text Some Info Text Some Info Text Some Info Text
                 <br />
                 <a href="https://en.wikipedia.org/wiki/Chess">Hey it's a link</a>
-            </Tab.Pane>}
+            </Tab.Pane></Transition>}
         ]
         return (
             <div>
@@ -147,12 +163,16 @@ class Info extends React.Component {
                                     </Grid.Row>
                                     <Grid.Row></Grid.Row>
                                 </Grid>
+                                
                                 <Tab 
                                     style={{height: '500px'}} 
                                     grid={{paneWidth: 13, tabWidth: 2}} 
                                     menu={{inverted: true, fluid: true, vertical: true, tabular: true, pointing: true, menuPosition: 'left'}}
+                                    renderActiveOnly={false}
                                     panes={panes} 
-                                />
+                                />                                    
+                                
+
                             </Sidebar.Pusher>
                         </Sidebar.Pushable>
                     </div>
